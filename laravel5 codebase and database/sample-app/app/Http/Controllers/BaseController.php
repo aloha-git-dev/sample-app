@@ -18,9 +18,6 @@ class BaseController extends Controller {
     public function requestAPI($arrParam = array()) {
 		if (empty($arrParam['url']))
 			return false;
-
-		echo $arrParam['url']."?".http_build_query($arrParam['param']);
-		die;
 		
 		$curl = curl_init();
 		curl_setopt($curl,CURLOPT_URL, $arrParam['url']."?".http_build_query($arrParam['param']));
