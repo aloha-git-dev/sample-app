@@ -1,0 +1,16 @@
+header{
+	background-color: #2b2b2b;
+	color: #ffffff;
+}
+#container{
+	margin: 0 auto;
+	display: table;
+	padding: 20px 0 20px 0;
+	width: 100%;
+}
+#container .row{
+	padding: 10px 0;
+}
+.add-record{
+	color: #ffffff !important;
+}
